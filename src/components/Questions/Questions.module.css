@@ -1,0 +1,209 @@
+.opcity {
+    background-color: rgba(59, 47, 74);
+    position: absolute;
+    opacity: 0.9;
+    min-height: 85%;
+    width: 100%;
+}
+
+.Questions {
+    background-image: url(./images/background.jpg);
+    min-height: 100px;
+    color: aliceblue;
+    display: flex;
+    margin-bottom: 15%;
+
+    .all {
+        position: relative;
+        max-width: 600px;
+        margin-inline: auto;
+
+        h2 {
+            text-align: start;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: -30px;
+        }
+
+        .inps {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+
+            input {
+                background-color: rgba(255, 255, 255, 0.2);
+                width: 100%;
+                border-radius: 12px;
+                padding: 20px;
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 10px;
+                padding-top: 10px;
+                font-size: 15px;
+
+            }
+        }
+
+        .in3 {
+            min-height: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 100%;
+            border-radius: 12px;
+            padding: 20px;
+            padding-bottom: 60px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        div button {
+            background-color: rgba(217, 23, 108, 1);
+            min-width: 150px;
+            min-height: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+            color: aliceblue;
+            margin-left: 200px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: transform 0.15s ease
+        }
+
+        button:focus {
+            transform: scale(0.95);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+    }
+
+    .personal {
+        position: relative;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 60px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+
+        div {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            p {
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    .opcity {
+        min-height: 100%;
+    }
+
+    .Questions {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 100%;
+
+        .all {
+            max-width: 300px;
+            margin-right: 10px !important;
+            margin-left: 10px !important;
+
+            p {
+                width: 100%;
+            }
+
+            .inps {
+                display: grid;
+                gap: 0;
+
+                input {
+                    width: 70%;
+                }
+            }
+
+            .in3 {
+                width: 70%;
+                min-height: 50px !important;
+                margin-bottom: 40px;
+            }
+
+            div button {
+                margin: 0;
+            }
+        }
+
+        .personal {
+            background-color: rgba(59, 47, 74);
+            width: 100%;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .Questions {
+        .all {
+
+            .inps {
+                input {
+                    width: 100%;
+                }
+            }
+
+            .in3 {
+                width: 100%;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Questions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .all {
+            max-width: 300px !important;
+            margin-inline: auto !important;
+
+            .inps{
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+
+        .personal {
+            margin-top: 80px;
+            max-width: 600px !important;
+            margin-inline: auto !important;
+            background-color: rgba(59, 47, 74, 0);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .opcity{
+        min-height: 80%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .opcity{
+        min-height: 90%;
+    }
+}
